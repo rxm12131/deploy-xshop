@@ -4,7 +4,7 @@ const createHandler = require('github-webhook-handler')
 const handler = createHandler({ path: '/webhook', secret: 'vnshop' })
     // 上面的 secret 保持和 GitHub 后台设置的一致
 
-const port = 9988
+const port = 6666
 const projects = ['vnshop.shudong', 'x-shop', 'vnshop', 'deploy', 'deploy-vnshop']
 
 const projectHandler = (event, action) => {
